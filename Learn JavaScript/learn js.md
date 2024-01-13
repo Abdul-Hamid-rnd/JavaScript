@@ -1,7 +1,5 @@
 
-
-## <========= String method ========>
-
+// <========= String method ========>
 //Searching
 search()               // return index number do with regex
 indexOf(str,15)       //return index number any words or letter
@@ -39,7 +37,7 @@ toUpperCase()                    //Convert all text uppercase
 toLowerCase()                   //Convert all text lowerercase
 
 
-## < = = = = = JAVASCRIPT ARAAY = = = = = >
+// < = = = = = JAVASCRIPT ARAAY = = = = = >
 // Adding & removing elements
 push('word')          // add one or more elements to the end of an array.
 pop()           // remove an element from the end of an array.
@@ -77,7 +75,7 @@ reverse()           //reverses the elements in an array
 toReversed() 
 split()
 
-## < = = = = = JAVASCRIPT OPERATORS = = = = = >
+// < = = = = = JAVASCRIPT OPERATORS = = = = = >
 Arithmetic Operators
 Assignment Operators
 Comparison Operators
@@ -88,7 +86,7 @@ Ternary/conditional Operators
 Nullish Coalescing Operators
 The Optional Chaining Operator (?.)
 
-## < = = = = = JAVASCRIPT NUMBER METHODS = = = = = >
+// < = = = = = JAVASCRIPT NUMBER METHODS = = = = = >
 //global
 toString()
 toPrecision()
@@ -96,7 +94,7 @@ ValueOf()
 toExponential()
 toFixed()
 
-## Convert variables to numbers
+//Convert variables to numbers
 Number()
 parseFloat()
 parseInt()
@@ -117,7 +115,7 @@ MIN_SAFE_INTEGER
 POSITIVE_INFINITY
 NEGATIVE_INFINITY
 
-## < = = = = = JAVASCRIPT MATH METHODS = = = = = >
+// < = = = = = JAVASCRIPT MATH METHODS = = = = = >
 //Number to integer
 Math.round(x)	//Returns x rounded to its nearest integer
 Math.ceil(x)	//Returns x rounded up to its nearest integer
@@ -164,7 +162,7 @@ setMinutes()
 setMonth()
 setSeconds()
 
-## < = = = = = JAVASCRIPT SET METHODS = = = = = >
+// < = = = = = JAVASCRIPT SET METHODS = = = = = >
 size
 new Set()
 add()
@@ -172,7 +170,7 @@ delete()
 has()
 values()
 
-## < = = = = = JAVASCRIPT MAP METHODS = = = = = >
+// < = = = = = JAVASCRIPT MAP METHODS = = = = = >
 size
 new map()
 set()
@@ -181,7 +179,7 @@ delete()
 has()
 entries()
 
-## < = = = = = JAVASCRIPT LOOPING = = = = = >
+// < = = = = = JAVASCRIPT LOOPING = = = = = >
 if()
 if else
 if else if
@@ -192,7 +190,7 @@ while()
 do...while 
 switch case
 
- ## < = = = = = JAVASCRIPT BOM = = = = = >        
+ // < = = = = = JAVASCRIPT BOM = = = = = >        
 //Window
 window.innerHeight
 window.innerWidth 
@@ -239,8 +237,7 @@ clearInterval()
 //Cookies
 document.cookie
 
-## < = = = = = JAVASCRIPT DOM = = = = = >
-
+// < = = = = = JAVASCRIPT DOM = = = = = >
 // Selecting elements
 getElementById()            // select an element by id.
 getElementsByName()         // select elements by name.
@@ -297,8 +294,7 @@ getAttribute
 removeAttribute
 hasAttribute
      
-## <========= JS EVENTS ========>
-
+// <========= JS EVENTS ========>
 //Form events
 onblur
 onchange
@@ -345,7 +341,7 @@ onresize
 //Custom Event
 //Mutation Observer
 
-## < = = = = = JS OBJECTS = = = = = >
+// < = = = = = JS OBJECTS = = = = = >
  Properties
  Display
  Accessors
@@ -353,7 +349,7 @@ onresize
  Prototypes
  Iterables
 
- ## < = = = = = JS FUNCTION = = = = = >
+ // < = = = = = JS FUNCTION = = = = = >
  arrow function
  Parameters
  Invocation
@@ -362,13 +358,13 @@ onresize
  Bind
  Closures
 
- ## < = = = = = JS ASYNC = = = = = >
+ // < = = = = = JS ASYNC = = = = = >
  Callbacks
  Asynchronous
  Promises
  Await
 
- ## < = = = = = JS WEB API = = = = = >
+ // < = = = = = JS WEB API = = = = = >
  Forms
  History
  Storage 
@@ -384,7 +380,7 @@ XML File
 Database
 Applications
 
-## < = = = = = JS JSON = = = = = >
+// < = = = = = JS JSON = = = = = >
 Data Types
 Parse
 Stringify
@@ -393,7 +389,7 @@ Arrays
 Server
 
 
-## < = = = = = JS MORE... = = = = = >
+// < = = = = = JS MORE... = = = = = >
 RegExp
 scope
 hoisting
@@ -407,7 +403,7 @@ Error handel
 Rest Operator
 destructuring
 
-## <========= JS PROJECTS ========>
+// <========= JS PROJECTS ========>
 search functions
 Accordion
 Tabs menu
