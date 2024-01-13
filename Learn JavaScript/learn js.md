@@ -2,12 +2,19 @@
 // <========= String method ========>
 //Searching
 search()               // return index number do with regex
+
 indexOf(str,15)       //return index number any words or letter
+
 lastIndexOf(str,15)   //retuirn index number from last position
+
 match()               //return match result with an array
+
 matchAll()            //retruns an iterator then (convert array.from)
+
 includes('word',12)    //return true or false with specified value
+
 startsWith('word', 7)  //returns true if a string begins with a specified value.
+
 endsWith('word', 8)     //returns true if a string ends with a specified value
 
 //Trimming
