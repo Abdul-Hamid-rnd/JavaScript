@@ -1,19 +1,15 @@
 ***Multiply each element by 2***
-
 ```
 const originalArray = [1, 2, 3, 4, 5];
 const doubledArray = originalArray.map(num => num * 2);
 console.log(doubledArray); // [2, 4, 6, 8, 10]
 
 ```
-
 ***Square each element***
-
 ```
 const originalArray = [1, 2, 3, 4, 5];
 const squaredArray = originalArray.map(num => num ** 2);
 console.log(squaredArray); // [1, 4, 9, 16, 25]
-
 ```
 ***Convert strings to uppercase***
 
