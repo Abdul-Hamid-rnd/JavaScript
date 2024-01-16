@@ -1,3 +1,4 @@
+## JavaScript map method...
 ***1. Multiply each element by 2***
 ```
 const originalArray = [1, 2, 3, 4, 5];
