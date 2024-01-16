@@ -1,17 +1,17 @@
-***Multiply each element by 2***
+***1. Multiply each element by 2***
 ```
 const originalArray = [1, 2, 3, 4, 5];
 const doubledArray = originalArray.map(num => num * 2);
 console.log(doubledArray); // [2, 4, 6, 8, 10]
 
 ```
-***Square each element***
+***2. Square each element***
 ```
 const originalArray = [1, 2, 3, 4, 5];
 const squaredArray = originalArray.map(num => num ** 2);
 console.log(squaredArray); // [1, 4, 9, 16, 25]
 ```
-***Convert strings to uppercase***
+***3. Convert strings to uppercase***
 
 ```
 const words = ['apple', 'banana', 'cherry'];
@@ -20,7 +20,7 @@ console.log(uppercaseWords); // ['APPLE', 'BANANA', 'CHERRY']
 
 ```
 
-***Extract lengths of strings***
+***4. Extract lengths of strings***
 ```
 const words = ['apple', 'banana', 'cherry'];
 const lengths = words.map(word => word.length);
@@ -28,7 +28,7 @@ console.log(lengths); // [5, 6, 6]
 
 ```
 
-***Convert Fahrenheit temperatures to Celsius***
+***5. Convert Fahrenheit temperatures to Celsius***
 ```
 const fahrenheitTemps = [32, 68, 104, 212];
 const celsiusTemps = fahrenheitTemps.map(temp => (temp - 32) * (5/9));
@@ -36,7 +36,7 @@ console.log(celsiusTemps); // [0, 20, 40, 100]
 
 ```
 
-***Filter out odd numbers***
+***6. Filter out odd numbers***
 ```
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const evenNumbers = numbers.map(num => num * 2).filter(num => num % 2 === 0);
@@ -44,14 +44,14 @@ console.log(evenNumbers); // [4, 8, 12, 16]
 
 ```
 
-***Add index to each element***
+***7. Add index to each element***
 ```
 const originalArray = ['a', 'b', 'c', 'd'];
 const arrayWithIndex = originalArray.map((element, index) => `${element}-${index}`);
 console.log(arrayWithIndex); // ['a-0', 'b-1', 'c-2', 'd-3']
 
 ```
-***Convert array of objects to an array of specific property values***
+***8. Convert array of objects to an array of specific property values***
 ```
 const users = [
   { id: 1, name: 'Alice' },
@@ -63,7 +63,7 @@ console.log(userIds); // [1, 2, 3]
 
 ```
 
-***Calculate the total price of items***
+***9. Calculate the total price of items***
 ```
 const items = [
   { name: 'Widget', price: 10 },
@@ -75,7 +75,7 @@ console.log(totalPrice); // 35
 
 ```
 
-***Capitalize the first letter of each word in a sentence:***
+***10. Capitalize the first letter of each word in a sentence:***
 ```
 const sentence = 'hello world from javascript';
 const capitalizedWords = sentence.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1));
@@ -83,7 +83,7 @@ console.log(capitalizedWords.join(' ')); // 'Hello World From Javascript'
 
 ```
 
-***Create an array of objects with index and value***
+***11. Create an array of objects with index and value***
 ```
 const originalArray = ['a', 'b', 'c', 'd'];
 const arrayWithIndexAndValue = originalArray.map((element, index) => ({ index, value: element }));
@@ -92,7 +92,7 @@ console.log(arrayWithIndexAndValue);
 
 ```
 
-***Multiply elements of two arrays at corresponding indices***
+***12. Multiply elements of two arrays at corresponding indices***
 ```
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
@@ -101,7 +101,7 @@ console.log(multipliedArray); // [4, 10, 18]
 
 ```
 
-***Calculate squares of odd numbers and cubes of even numbers***
+***13. Calculate squares of odd numbers and cubes of even numbers***
 ```
 const numbers = [1, 2, 3, 4, 5];
 const transformedNumbers = numbers.map(num => (num % 2 === 0) ? num ** 3 : num ** 2);
@@ -109,14 +109,14 @@ console.log(transformedNumbers); // [1, 8, 9, 64, 25]
 
 ```
 
-***Convert a string to an array of characters***
+***14. Convert a string to an array of characters***
 ```
 const randomNumbers = Array.from({ length: 5 }, () => Math.random());
 console.log(randomNumbers);
 
 ```
 
-***Reverse the elements of an array***
+***15. Reverse the elements of an array***
 ```
 const originalArray = [1, 2, 3, 4, 5];
 const reversedArray = originalArray.map((_, index, array) => array[array.length - 1 - index]);
