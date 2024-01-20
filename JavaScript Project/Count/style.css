@@ -1,0 +1,84 @@
+p{
+margin-right: 240px;
+font-size: 30px;
+justify-content: center;
+border: 2px solid green;
+ border-radius: 8px;
+width: 250px;
+margin-left: 120px;
+padding: 20px;
+text-align: center;
+background-color: beige;
+align-items: center;
+position: relative;
+display: flex;
+}
+#Increase{
+color: green;
+border-color: green;
+border-radius: 5px;
+width: 90px;
+height: 40px;
+text-align: center;
+font-size: 16px;
+font-family: monospace;
+cursor: pointer;
+}
+#Reset{
+color: black;
+border-color: black;
+border-radius: 5px;
+width: 90px;
+height: 40px;
+text-align: center;
+font-size: 16px;
+font-family: monospace;
+cursor: pointer;
+}
+#Decrease{
+color: red;
+border-color: red;
+border-radius: 5px;
+width: 90px;
+height: 40px;
+text-align: center;
+font-size: 16px;
+font-family: monospace;
+cursor: pointer;
+}
+button{
+margin-left: 45px;    
+}
+.main{
+    text-align: center;
+}
+button:hover{
+    background: green;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    }
+  
+ 
+ 
+  
+  .main #mainValue{
+    margin-right: 302px;
+  }
+.main{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ position: relative;
+ display: flex;
+
+}
+.orgin{
+    ext-align: center;
+    align-items: center;
+    justify-content: center;
+ position: relative;
+ display: flex;
+ margin-right: 230px;
+
+}
