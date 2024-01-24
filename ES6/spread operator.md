@@ -91,3 +91,19 @@ console.log(withoutThree);
 // Output: [1, 2, 4, 5]
 
 ```
+***11. Spread and Rest Operators:***
+```
+// Spread operator
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];
+
+// Rest operator
+function sum(...numbers) {
+    return numbers.reduce((acc, num) => acc + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4, 5));
+
+// Output: 15
+
+```
