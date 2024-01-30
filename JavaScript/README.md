@@ -72,7 +72,7 @@ A complete roadmap javascript ever in the github
     * Array.keys
     * Array.entries 
   * ## High-order methods
-    * map
+    - [map]( https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/High-order-function/map.md)
     * forEach
     * filter
     * reduce
