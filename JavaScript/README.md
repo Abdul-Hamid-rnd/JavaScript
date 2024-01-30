@@ -73,15 +73,15 @@ A complete roadmap javascript ever in the github
     * Array.entries 
   * ## High-order methods
     - [map]( https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/High-order-function/map.md)
-    * forEach
-    * filter
-    * reduce
-    * reduceRight
-    * every
-    * some
-    * sort
-    * flat
-    * flatMap
+    * [forEach](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/High-order-function/forEach.md)
+    * [filter](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/High-order-function/filter.md)
+    * [reduce](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/High-order-function/reduce.md)
+    * [reduceRight]
+    * [every]
+    * [some]
+    * [sort]
+    * [flat]
+    * [flatMap](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/High-order-function/flatmap.md)
 
   
   </details>
