@@ -10,7 +10,7 @@
     * Decrement (--)
     * Exponentiation (**)
   
-***## Arithmetic Operators Examples***
+## Arithmetic Operators Examples
 
 ````
 let x = 10;
