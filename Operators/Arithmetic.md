@@ -1,4 +1,4 @@
-# JavaScript Arithmetic operators with examples:
+## JavaScript Arithmetic operators with examples:
 
 * ### Basic Operators:
     * Addition (+) 
@@ -10,7 +10,8 @@
     * Decrement (--)
     * Exponentiation (**)
   
-***Arithmetic Operators Examples***
+***## Arithmetic Operators Examples***
+
 ````
 let x = 10;
 let y = 5;
