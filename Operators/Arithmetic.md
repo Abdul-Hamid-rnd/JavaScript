@@ -1,4 +1,4 @@
-# here is a breakdown of JavaScript Arithmetic operators with examples:
+# JavaScript Arithmetic operators with examples:
 
 * ### Basic Operators:
     * Addition (+) 
