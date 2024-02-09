@@ -59,12 +59,44 @@ function ToggleableContent(props) {
 }
 
 ```
-***7. ***
+***7. Toggle class Using State and Ternary Operator:***
 ```
+import React, { useState } from 'react';
+
+function ToggleableElement() {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
+
+  return (
+    <div className={isActive ? 'active' : ''}>
+      This element is {isActive ? 'active' : 'inactive'}.
+      <button onClick={handleClick}>Toggle</button>
+    </div>
+  );
+}
 
 ```
-***8. ***
+***8. Using the classList.toggle() Method:***
 ```
+import React, { useRef } from 'react';
+
+function ToggleableElement() {
+  const elementRef = useRef(null);
+
+  const handleClick = () => {
+    elementRef.current.classList.toggle('active');
+  };
+
+  return (
+    <div ref={elementRef} className="element">
+      This element is toggled by button.
+      <button onClick={handleClick}>Toggle</button>
+    </div>
+  );
+}
 
 ```
 ***9. ***
