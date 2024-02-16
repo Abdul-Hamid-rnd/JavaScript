@@ -704,3 +704,62 @@ const RangeInputExample = () => {
 export default RangeInputExample;
 
 ```
+***1. ***
+```
+const timeoutRef = useRef(null);
+useEffect(() => {
+  timeoutRef.current = setTimeout(next, 3000);
+
+  return () => {
+    // Cleanup: Clear the timeout on unmount or dependency change
+    clearTimeout(timeoutRef.current);
+  };
+}, [slide]); // Only re-run if `slide` changes
+<div
+  onMouseEnter={() => {
+    clearTimeout(timeoutRef.current); // Clear timeout on mouse enter
+  }}
+  onMouseLeave={() => {
+    timeoutRef.current = setTimeout(next, 3000); // Reset timeout on mouse leave
+  }}
+>
+  {/* Div content */}
+</div>
+
+```
+***2. ***
+```
+
+```
+***3. ***
+```
+
+```
+***4. ***
+```
+
+```
+***5. ***
+```
+
+```
+***6. ***
+```
+
+```
+***7. ***
+```
+
+```
+***8. ***
+```
+
+```
+***9. ***
+```
+
+```
+***10. ***
+```
+
+```
