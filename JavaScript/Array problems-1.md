@@ -112,3 +112,32 @@ let rotatedArr = rotateArray(arr, k);
 console.log("Rotated Array:", rotatedArr); // Output: [4, 5, 1, 2, 3]
 
 ```
+***11. Find all subarrays with a given sum***
+```
+let arr = [1, 2, 3, 4, 5];
+let targetSum = 9;
+
+// Finding all subarrays with the given sum
+function subarraysWithSum(arr, sum) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        let currentSum = 0;
+        for (let j = i; j < arr.length; j++) {
+            currentSum += arr[j];
+            if (currentSum === sum) {
+                result.push(arr.slice(i, j + 1));
+            }
+        }
+    }
+    return result;
+}
+
+let subarrays = subarraysWithSum(arr, targetSum);
+
+console.log("Subarrays with sum", targetSum, ":", subarrays); // Output: [[2, 3, 4], [4, 5]]
+
+```
+
+
+
+
