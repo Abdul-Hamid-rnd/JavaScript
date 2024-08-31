@@ -150,4 +150,88 @@ console.log(calculator.add(10, 5)); // Output: 15
 console.log(calculator.subtract(10, 5)); // Output: 5
 
 ```
+## Return javascript
+
+***1. Using an Array***
+```
+function getMultipleValues() {
+    const value1 = "Hello";
+    const value2 = 42;
+    const value3 = true;
+    return [value1, value2, value3];
+}
+
+const [a, b, c] = getMultipleValues();
+console.log(a); // "Hello"
+console.log(b); // 42
+console.log(c); // true
+
+```
+***2. Using an Object***
+```
+function getMultipleValues() {
+    const value1 = "Hello";
+    const value2 = 42;
+    const value3 = true;
+    return {
+        firstValue: value1,
+        secondValue: value2,
+        thirdValue: value3
+    };
+}
+
+const { firstValue, secondValue, thirdValue } = getMultipleValues();
+console.log(firstValue); // "Hello"
+console.log(secondValue); // 42
+console.log(thirdValue); // true
+
+```
+***3. Using an ES6 Map***
+```
+function getMultipleValues() {
+    const value1 = "Hello";
+    const value2 = 42;
+    const value3 = true;
+    return new Map([
+        ['firstValue', value1],
+        ['secondValue', value2],
+        ['thirdValue', value3]
+    ]);
+}
+
+const valuesMap = getMultipleValues();
+console.log(valuesMap.get('firstValue')); // "Hello"
+console.log(valuesMap.get('secondValue')); // 42
+console.log(valuesMap.get('thirdValue')); // true
+
+```
+***4. Using an ES6 Set (if values are unique)***
+```
+function getMultipleValues() {
+    const value1 = "Hello";
+    const value2 = 42;
+    const value3 = true;
+    return new Set([value1, value2, value3]);
+}
+
+const valuesSet = getMultipleValues();
+valuesSet.forEach(value => console.log(value));
+// Output:
+// "Hello"
+// 42
+// true
+
+```
+***5. Using Destructuring Assignment (for multiple returns directly)***
+```
+function getMultipleValues() {
+    return ["Hello", 42, true];
+}
+
+const [greeting, number, isTrue] = getMultipleValues();
+console.log(greeting); // "Hello"
+console.log(number); // 42
+console.log(isTrue); // true
+
+```
 
