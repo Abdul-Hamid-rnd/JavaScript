@@ -1,14 +1,12 @@
 ## Hoisting
 ***Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope (either the global scope or function scope) during the compilation phase, before the code is executed. This allows functions to be called and variables to be referenced before they are declared in the code.***
 
-***How Hoisting Works***
-```
-When JavaScript code is executed, the JavaScript engine performs two passes:
+### How Hoisting Works
 
-Compilation Phase: During this phase, the engine reads through the entire script and "hoists" all variable and function declarations to the top of their respective scopes.
+  * When JavaScript code is executed, the JavaScript engine performs two passes:
+  * Compilation Phase: During this phase, the engine reads through the entire script and "hoists" all variable and function declarations to the top of their respective scopes.
+  * Execution Phase: The engine then executes the code line by line, in the order it appears.
 
-Execution Phase: The engine then executes the code line by line, in the order it appears.
-```
 ***Hoisting of Variables***
 ```
 Var : Variables declared with var are hoisted to the top of their scope but are not initialized until their line of code is executed. The initial value of hoisted variables is undefined.
