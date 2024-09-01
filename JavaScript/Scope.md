@@ -1,3 +1,6 @@
+
+###### Scope : JavaScript scope refers to the accessibility of variables, functions, and objects in different parts of the code during runtime. Understanding scope is crucial for managing variable access and avoiding conflicts in JavaScript.
+
 ***1. Global Scope***
 ```
 var globalVariable = 'I am global';
