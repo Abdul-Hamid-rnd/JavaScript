@@ -1,9 +1,9 @@
 ## ✅ Comparison operators
 ***Comparison operators in JavaScript are used to compare two values and determine their relationship. They return a Boolean value (true or false) based on the comparison. Here’s a detailed look at each comparison operator with examples:***
 
-## ✅ Comparison Operators in JavaScript
+## ⬇️ Comparison Operators in JavaScript
 
-*** ✅ Equal (==)***
+***✅ Equal (==)***
 ```
 console.log('Equal (==):');
 console.log(5 == 5); // true
