@@ -3,16 +3,17 @@
 
 ### How Hoisting Works
 
-  * When JavaScript code is executed, the JavaScript engine performs two passes:
-  * Compilation Phase: During this phase, the engine reads through the entire script and "hoists" all variable and function declarations to the top of their respective scopes.
-  * Execution Phase: The engine then executes the code line by line, in the order it appears.
+  * *When JavaScript code is executed, the JavaScript engine performs two passes:*
+  * *Compilation Phase: During this phase, the engine reads through the entire script and "hoists" all variable and function declarations to the top of their respective scopes.*
+  * *Execution Phase: The engine then executes the code line by line, in the order it appears.*
 
-***Hoisting of Variables***
-```
-Var : Variables declared with var are hoisted to the top of their scope but are not initialized until their line of code is executed. The initial value of hoisted variables is undefined.
+## Hoisting of Variables
 
-Let : Variables declared with let and const are also hoisted, but not initialized. They remain in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered, meaning they cannot be accessed before their declaration.
-```
+* **Var :** *Variables declared with var are hoisted to the top of their scope but are not initialized until their line of code is executed. The initial value of hoisted variables is undefined.*
+* **Let :** *Variables declared with let and const are also hoisted, but not initialized. They remain in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered, meaning they cannot be accessed before their declaration.*
+
+
+
 ***Example of Var hoisting***
 ```
 // 1
