@@ -5,7 +5,7 @@
 <details>
 <summary>Node List</summary>
   
-  ## ✅ Node List
+  ### ✅ Node List
 
  ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/NodeList.png)
   
@@ -13,7 +13,7 @@
 <details>
 <summary>Accessing Elements</summary>
 
-## ✅ Accessing Elements
+### ✅ Accessing Elements
 
 ```
 document.getElementById ('idName')
@@ -28,15 +28,13 @@ document.querySelectorAll (CssSelector)
 <details>
 <summary>Traversing the Elements</summary>
 
-## ✅ Traversing Elements
-
+### ✅ Traversing Elements
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/traversing%20elements.png)
   
 </details>
 <details>
 <summary>Manipulating Elements</summary>
-
-## ✅ Manipulating Elements
+### ✅ Manipulating Elements
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/manipulate%20Element-1.png)
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/manipulate%20Elements-2.png)
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/manipulate%20Elements-3.png)
@@ -45,6 +43,71 @@ document.querySelectorAll (CssSelector)
 
 <details>
 <summary>Js Event Handling</summary>
+
+### ✅ Form Events
+
+```
+1. onblur
+2. onchange
+3. oncontextmenu
+4. onfocus
+5. oninput
+6. oninvalid
+7. onselect
+8. onsearch
+9. onsubmit
+10. onreset
+```
+### ✅ Keyborad Events
+
+```
+1. onkeydown
+2. onkeydown
+3. onkeyup
+```
+### ✅ Mouse Events
+
+```
+1. onclick
+2. ondblclick
+3. onmouseup
+4. onmousedown
+5. onmouseout
+6. onmouseover
+7. onmousemove
+8. onwheel
+```
+### ✅ Drag Events
+
+```
+1. ondrag
+2. ondragstart
+3. ondragend
+4. ondragenter
+5. ondragleave
+6. ondrop
+7. ondragover
+8. onscroll
+```
+### ✅ Clipboard Events
+
+```
+1. oncopy
+2. oncut
+3. onpaste
+```
+### ✅ Load Events
+
+```
+1. onload
+2. onerror
+3. onunload
+4. onresize
+```
+### ✅ hashchange Event
+### ✅ Custom Event
+### ✅ Mutation Observer
+
   
 </details>
 <details>
