@@ -34,7 +34,9 @@ document.querySelectorAll (CssSelector)
 </details>
 <details>
 <summary>Manipulating Elements</summary>
+  
 ### ✅ Manipulating Elements
+  
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/manipulate%20Element-1.png)
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/manipulate%20Elements-2.png)
 ![](https://github.com/Abdul-Hamid-rnd/JavaScript/blob/Javascript-Project/JavaScript%20Pictures/manipulate%20Elements-3.png)
