@@ -1,145 +1,152 @@
+ # Fetch API
 
-***1. Create (POST)***
+ <details>
+   <summary>Core Methods</summary>
+   
+   ```javascript
+    // ✅ GET Request (default method)
+
+fetch('https://api.example.com/items')
+  .then(res => res.json())
+  .then(data => console.log('GET:', data));
+
+// ✅ POST Request (create new resource)
+
+fetch('https://api.example.com/items', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name: 'New Item' })
+})
+  .then(res => res.json())
+  .then(data => console.log('POST:', data));
+
+// ✅ PUT Request (replace resource)
+
+fetch('https://api.example.com/items/1', {
+  method: 'PUT',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name: 'Updated Item' })
+})
+  .then(res => res.json())
+  .then(data => console.log('PUT:', data));
+
+// ✅ PATCH Request (partial update)
+
+fetch('https://api.example.com/items/1', {
+  method: 'PATCH',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name: 'Partially Updated' })
+})
+  .then(res => res.json())
+  .then(data => console.log('PATCH:', data));
+
+// ✅ DELETE Request (remove resource)
+
+fetch('https://api.example.com/items/1', {
+  method: 'DELETE'
+})
+  .then(res => {
+    if (res.ok) console.log('DELETE: Success');
+    else console.log('DELETE: Failed');
+  });
+
+// ✅ HEAD Request (retrieve headers only)
+
+fetch('https://api.example.com/items', {
+  method: 'HEAD'
+})
+  .then(res => {
+    console.log('HEAD: Content-Type:', res.headers.get('Content-Type'));
+  });
+
+// ✅ OPTIONS Request (get supported methods)
+
+fetch('https://api.example.com/items', {
+  method: 'OPTIONS'
+})
+  .then(res => {
+    console.log('OPTIONS: Allow methods:', res.headers.get('Allow'));
+  });
+
+
+   ```
+ </details>
+ 
+ <details>
+   <summary>Fetch API Options</summary>
+
+   ```javascript
+fetch(url, {
+  method: 'GET',                // HTTP method: GET, POST, PUT, DELETE, PATCH, etc.
+
+  headers: {                    // HTTP headers
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer token'
+  },
+
+  body: JSON.stringify({ key: 'value' }), // Request body (for POST, PUT, PATCH)
+
+  mode: 'cors',                 // 'cors' | 'no-cors' | 'same-origin'
+  
+  credentials: 'same-origin',   // 'omit' | 'same-origin' | 'include'
+
+  cache: 'default',             // 'default' | 'no-cache' | 'reload' | 'force-cache' | 'only-if-cached'
+
+  redirect: 'follow',           // 'follow' | 'manual' | 'error'
+
+  referrer: 'no-referrer',      // or 'client' | URL string
+
+  referrerPolicy: 'no-referrer', // or 'origin' | 'strict-origin' | 'same-origin' | etc.
+
+  integrity: '',                // Subresource integrity hash (e.g., SHA-256)
+
+  keepalive: false,             // Keep the request alive after page unload (used with POST)
+
+  signal: AbortController.signal, // Allows request cancellation
+
+  duplex: 'half'                // Required for ReadableStream as body (only in some environments)
+});
 ```
-const createData = async () => {
-  const data = {
-    name: 'John Doe',
-    age: 30
-  };
+ </details>
+ 
+ <details>
+   <summary>Response Methods & Response Property</summary>
 
-  try {
-    const response = await fetch('https://api.example.com/data', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
+   ```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    // ✅ Properties
+    console.log('ok:', response.ok);                       // true if status 200–299
+    console.log('status:', response.status);               // HTTP status code
+    console.log('statusText:', response.statusText);       // HTTP status text
+    console.log('url:', response.url);                     // Final URL after redirects
+    console.log('type:', response.type);                   // 'basic', 'cors', 'opaque', etc.
+    console.log('redirected:', response.redirected);       // true if redirected
+    console.log('headers:', response.headers);             // Headers object
 
-    if (!response.ok) {
-      throw new Error('Failed to create data: ' + response.status);
-    }
+    // ✅ Headers access
+    console.log('Content-Type:', response.headers.get('Content-Type'));
+    console.log('Has Auth Header:', response.headers.has('Authorization'));
 
-    const result = await response.json();
-    console.log('Data created:', result);
-  } catch (error) {
-    console.error('Error creating data:', error);
-  }
-};
+    ✅ Methods (Only ONE of these can be used per response)
+     return response.text();           // For plain text response
+     return response.json();           // For JSON response
+     return response.blob();           // For binary data
+     return response.arrayBuffer();    // For raw binary stream
+     return response.formData();       // For multipart/form-data
 
-createData();
-
-
+    // Example:
+    return response.json();
+  })
+  .then(data => {
+    console.log('Response body data:', data);
+  })
+  .catch(error => {
+    console.error('Fetch error:', error);
+  });
 ```
-***2. Read (GET)***
-```
-const readData = async () => {
-  try {
-    const response = await fetch('https://api.example.com/data');
-
-    if (!response.ok) {
-      throw new Error('Failed to fetch data: ' + response.status);
-    }
-
-    const data = await response.json();
-    console.log('Data fetched:', data);
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-};
-
-readData();
-
-```
-***3. Update (PUT)***
-```
-
-```
-***2. ***
-```
-const updateData = async () => {
-  const data = {
-    name: 'Jane Doe',
-    age: 28
-  };
-  const id = 1; // Example ID
-
-  try {
-    const response = await fetch(`https://api.example.com/data/${id}`, {
-      method: 'PUT', // Use PATCH if you are only updating part of the resource
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
-
-    if (!response.ok) {
-      throw new Error('Failed to update data: ' + response.status);
-    }
-
-    const result = await response.json();
-    console.log('Data updated:', result);
-  } catch (error) {
-    console.error('Error updating data:', error);
-  }
-};
-
-updateData();
-
-```
-***3. Delete (DELETE)***
-```
-const deleteData = async () => {
-  const id = 1; // Example ID
-
-  try {
-    const response = await fetch(`https://api.example.com/data/${id}`, {
-      method: 'DELETE'
-    });
-
-    if (!response.ok) {
-      throw new Error('Failed to delete data: ' + response.status);
-    }
-
-    console.log('Data deleted successfully');
-  } catch (error) {
-    console.error('Error deleting data:', error);
-  }
-};
-
-deleteData();
-
-```
-***2. Update Partially (PATCH)***
-```
-const patchData = async () => {
-  const partialData = {
-    age: 31 // Only updating the age field
-  };
-  const id = 1; // Example ID of the resource to be updated
-
-  try {
-    const response = await fetch(`https://api.example.com/data/${id}`, {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(partialData)
-    });
-
-    if (!response.ok) {
-      throw new Error('Failed to update data partially: ' + response.status);
-    }
-
-    const result = await response.json();
-    console.log('Data partially updated:', result);
-  } catch (error) {
-    console.error('Error partially updating data:', error);
-  }
-};
-
-patchData();
-
-```
-
-
+ </details>
+ 
+ <details>
+   <summary>Core Methods</summary>
+ </details>
